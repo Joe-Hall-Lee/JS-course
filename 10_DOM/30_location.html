@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">点我一下</button>
+
+    <form action="">
+        <input type="text">
+    </form>
+
+
+    <script>
+
+        const btn = document.getElementById("btn")
+        btn.addEventListener("click", () => {
+
+
+            /* 
+                location 表示的是浏览器地址栏的信息
+                    • 可以直接将 location 的值修改为一个新的地址，这样会使得网页发生跳转
+                    • location.assign() 跳转到一个新的地址
+                    • location.replace() 跳转到一个新的地址（无法通过回退按钮回退）
+                    •location.reload() 刷新页面，可以传递一个 true 来强制清缓存刷新
+                    • location.href 获取当前地址
+            */
+
+            // console.log(location.href)
+
+            // location = "https://blog.csdn.net/Joe_Hall_Lee?type=blog"
+
+            // location.assign("https://blog.csdn.net/Joe_Hall_Lee?type=blog")
+
+            // location.replace("https://blog.csdn.net/Joe_Hall_Lee?type=blog")
+
+            location.reload(true)
+        })
+    </script>
+</body>
+
+</html>
